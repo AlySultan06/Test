@@ -1,0 +1,107 @@
+
+
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+   font-family: "Inter", sans-serif;
+  
+}
+
+.container{
+    background-color: hsl(0, 0%, 8%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+img{
+    max-width: 100%;
+    border-radius: 50%;
+    width: 90px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 7px;
+    font-size: 30px;
+}
+h3{
+    color: hsl(75, 94%, 57%);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+p{
+    color: white;
+    font-size: 12x;
+}
+
+.skillsCard{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    
+}
+.skills{
+display: inline-block;
+text-align: center;
+background-color: hsl(0, 0%, 20%);
+color: white;
+padding: 12px 0;
+border-radius: 10px;
+width: 100%;
+font-size: 14px;
+cursor: pointer;
+}
+
+.skills:not(.excluded){
+    margin-bottom: 20px;
+}
+
+.skills:hover{
+color: hsl(0, 0%, 12%);
+background-color: hsl(75, 94%, 57%);
+transition-duration: 0.2s;
+}
+
+
+/* Small */
+@media (max-width: 375px) {
+  h1{font-size: 25px;}
+  h3{font-size: 16px;}
+  p{font-size: 14px;}
+ 
+}
